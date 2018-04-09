@@ -13,3 +13,6 @@ Mapper module - Takes input coordinates from OpenPose and maps the positions to 
 // Use the normalized values to build the joint positions of NAO.
 // Do some interpolation to make the movements smoother.
 // Feed the mapped values to the NAO Robot.
+
+
+
