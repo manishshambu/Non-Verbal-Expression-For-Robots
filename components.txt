@@ -2,7 +2,7 @@ Asynchronous Process (outside ROS):
 
 OpenPose --
 INPUT: Video portion of a YouTube video (.avi). Single person.
-(1) OUTPUT: Series of (cleaned-up, normalized) JSON files, where each file contains a dictionary of body parts 0-17 and each key has a value [x,y,z,c]. (x,y)=joint coordinates, c=confidence score.
+(1) OUTPUT: Series of (cleaned-up, normalized) JSON files, where each file contains a dictionary of body parts 0-17 and each key has a value [x,y,z,c]. (x,y,z)=joint coordinates, c=confidence score.
 FUNCTIONALITY: Extract human joint positions from video stream.
 
 Prosody Feature Extractor --
