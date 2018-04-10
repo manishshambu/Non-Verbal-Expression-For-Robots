@@ -1,0 +1,37 @@
+Asynchronous Process (outside ROS):
+
+OpenPose --
+INPUT: Video portion of a YouTube video (.avi). Single person.
+(1) OUTPUT: Series of (cleaned-up, normalized) JSON files, where each file contains a dictionary of body parts 0-17 and each key has a value [x,y,z,c]. (x,y)=joint coordinates, c=confidence score.
+FUNCTIONALITY: Extract human joint positions from video stream.
+
+Prosody Feature Extractor --
+INPUT: Audio portion of a YouTube video (.wav). Single person. No noise.
+(2) OUTPUT: Series of TXT files, where each file contains Levine-like prosody features extracted for each frame(?). Syllable-wise?
+FUNCTIONALITY: Extract prosody features from audio stream.
+
+Emotion Feature Extractor --
+INPUT: Text transcript of YouTube video (.txt). Single person. Bag of words.
+(3) OUTPUT: Bag of words emoji features for each frame. One TXT file per frame.
+FUNCTIONALITY: Extract emotion features from text stream.
+
+Gesture-Speech Modeler --
+INPUT: (1) (2) (3). Frame by frame.
+OUTPUT: Parameters of trained model. TXT file.
+FUNCTIONALITY: Create a mapping from prosody and emotion features to human joint positions
+
+In ROS:
+
+Speech-to-Gesture Converter --
+INPUT: Audio (.wav). Single person. No noise. Unseen by training process.
+(4) OUTPUT: Frame-by-frame human joint positions stream. Same format as (1) but streaming directly to Robot DoF Mapper. No storage (maybe only for debugging).
+
+Robot DoF Mapper --
+INPUT: (4).
+OUTPUT: Frame-by-frame robot joint positions. No storage (maybe only for debugging).
+(5) FUNCTIONALITY: Convert human trajectory to robot trajectory.
+
+Playback Node --
+INPUT: (5).
+OUTPUT: Robot motor torques.
+FUNCTIONALITY: Play gesture trajectory on robot.
