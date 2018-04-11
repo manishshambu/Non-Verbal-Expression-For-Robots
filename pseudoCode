@@ -14,9 +14,16 @@ Mapper module - Takes input coordinates from OpenPose and maps the positions to 
 // Use the normalized values to build the joint positions of NAO.
 // Do some interpolation to make the movements smoother.
 // Feed the mapped values to the NAO Robot.
-// 
 
 
+Generator Module - Once the model is trained with audio and gesture output, this module gives a corresponding gesture output values given a audio file.
+It divides the audio into frames and gives the corresponding gesture values in x, y z coordinates for each frame.
+
+// Input the trained HMM model, gestures are the hidden states and audio is the observation here.
+// Given the observation i.e audio, This module gives the corresponding gestures for each frame.
+// The gesture output that this module gives similar to the OpenPose output JSON file. (https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md)
+// The mapper module uses this gesture JSON files and uses the mapper module to convert the human joint positions to that of the NAO robot.
+// The joint positions are then fed into the NAO to play those gestures.
 
 
 
