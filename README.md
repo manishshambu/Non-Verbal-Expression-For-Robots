@@ -3,15 +3,10 @@ Prosody Extraction Module - Given an audio input, it gives the prosody features 
 // python audioAnalysis.py featureExtractionFile -i data/speech_music_sample.wav -mw 1.0 -ms 1.0 -sw 0.050 -ss 0.050 -o data/speech_music_sample.wav
 
 // Gives the output in a csv file.
-
 // Each value set corresponds to one time frame.
-
 // a. Extracting all speech features into a csv file. python audioAnalysis.py featureExtractionFile -i data/speech_music_sample.wav -mw 1.0 -ms 1.0 -sw 0.050 -ss 0.050 -o data/speech_music_sample.wav
-
 // b. Extracting all speech features for a set of wav files (Batch mode.) python audioAnalysis.py featureExtractionDir -i data/ -mw 1.0 -ms 1.0 -sw 0.050 -ss 0.050
-
 // c. Beat extraction python audioAnalysis.py beatExtraction -i data/beat/small.wav --plot
-
 //Reference - https://github.com/tyiannak/pyAudioAnalysis
 
 
@@ -32,6 +27,9 @@ It divides the audio into frames and gives the corresponding gesture values in x
 // Input the trained HMM model, gestures are the hidden states and audio is the observation here.
 // Given the observation i.e audio, This module gives the corresponding gestures for each frame.
 // The gesture output that this module gives similar to the OpenPose output JSON file. (https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/output.md)
+
+
+
 // The mapper module uses this gesture JSON files and uses the mapper module to convert the human joint positions to that of the NAO robot.
 // The joint positions are then fed into the NAO to play those gestures.
 
