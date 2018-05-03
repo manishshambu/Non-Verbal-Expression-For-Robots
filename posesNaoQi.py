@@ -1,1167 +1,1167 @@
 class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self)
-    
+
     def onLoad(self):
         # put initialization code here
         pass
-    
+
     def onUnload(self):
         # put clean-up code here
         pass
-    
-    def pose0(self):
+
+    def pose0(self, t):
         names = list()
         times = list()
         keys = list()
-        
+
         names.append("HeadPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.15])
-        
+
         names.append("HeadYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("LAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-2])
-        
+
         names.append("LElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.3894])
-        
+
         names.append("LHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("LHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("LHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("LShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.3994])
-        
+
         names.append("LShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.299871])
-        
+
         names.append("LWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([2])
-        
+
         names.append("RElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.3894])
-        
+
         names.append("RHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("RHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("RHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("RShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.3994])
-        
+
         names.append("RShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.299871])
-        
+
         names.append("RWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         motion = ALProxy("ALMotion")
         motion.angleInterpolation(names, keys, times, True)
-    
-    def pose1(self):
+
+    def pose1(self, t):
         names = list()
         times = list()
         keys = list()
-        
+
         names.append("HeadPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.15])
-        
+
         names.append("HeadYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.2])
-        
+
         names.append("LAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("LAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.00956])
-        
+
         names.append("LElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.98])
-        
+
         names.append("LHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.30])
-        
+
         names.append("LHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("LHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("LShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.3994])
-        
+
         names.append("LShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.299871])
-        
+
         names.append("LWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.00956])
-        
+
         names.append("RElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.98])
-        
+
         names.append("RHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("RHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.49])
-        
+
         names.append("RHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("RShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.965])
-        
+
         names.append("RShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.39862])
-        
+
         names.append("RWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         motion = ALProxy("ALMotion")
         motion.angleInterpolation(names, keys, times, True)
-    
-    def pose2(self):
+
+    def pose2(self, t):
         names = list()
         times = list()
         keys = list()
-        
+
         names.append("HeadPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("HeadYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("LAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.00956])
-        
+
         names.append("LElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.3894])
-        
+
         names.append("LHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("LHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("LShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.3994])
-        
+
         names.append("LShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.87])
-        
+
         names.append("RElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.367])
-        
+
         names.append("RHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.49])
-        
+
         names.append("RHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("RShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.3994])
-        
+
         names.append("RShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0])
-        
+
         names.append("RWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         motion = ALProxy("ALMotion")
         motion.angleInterpolation(names, keys, times, True)
-    
-    def pose3(self):
+
+    def pose3(self, t):
         names = list()
         times = list()
         keys = list()
-        
+
         names.append("HeadPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("HeadYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("LAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.00956])
-        
+
         names.append("LElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.56])
-        
+
         names.append("LHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("LHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("LShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.876])
-        
+
         names.append("LShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.76])
-        
+
         names.append("LWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.9876])
-        
+
         names.append("RAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.87])
-        
+
         names.append("RElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.367])
-        
+
         names.append("RHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.49])
-        
+
         names.append("RHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("RShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.35])
-        
+
         names.append("RShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0])
-        
+
         names.append("RWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         motion = ALProxy("ALMotion")
         motion.angleInterpolation(names, keys, times, True)
-    
-    def pose4(self):
+
+    def pose4(self, t):
         names = list()
         times = list()
         keys = list()
-        
+
         names.append("HeadPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("HeadYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("LAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.00956])
-        
+
         names.append("LElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.367])
-        
+
         names.append("LHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("LHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("LShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.35])
-        
+
         names.append("LShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.9876])
-        
+
         names.append("RAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.87])
-        
+
         names.append("RElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.367])
-        
+
         names.append("RHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.49])
-        
+
         names.append("RHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("RShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.35])
-        
+
         names.append("RShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0])
-        
+
         names.append("RWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         motion = ALProxy("ALMotion")
         motion.angleInterpolation(names, keys, times, True)
-    
-    def pose5(self):
+
+    def pose5(self, t):
         names = list()
         times = list()
         keys = list()
-        
+
         names.append("HeadPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("HeadYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("LAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.23])
-        
+
         names.append("LElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.765])
-        
+
         names.append("LHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("LHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("LHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("LShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.35])
-        
+
         names.append("LShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.35])
-        
+
         names.append("LWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.9876])
-        
+
         names.append("RAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.87])
-        
+
         names.append("RElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.367])
-        
+
         names.append("RHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.49])
-        
+
         names.append("RHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("RShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("RShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0])
-        
+
         names.append("RWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         motion = ALProxy("ALMotion")
         motion.angleInterpolation(names, keys, times, True)
-    
-    def pose6(self):
+
+    def pose6(self, t):
         names = list()
         times = list()
         keys = list()
-        
+
         names.append("HeadPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("HeadYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("LAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.98])
-        
+
         names.append("LElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.65])
-        
+
         names.append("LHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("LHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("LHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("LShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.35])
-        
+
         names.append("LShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.35])
-        
+
         names.append("LWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.9876])
-        
+
         names.append("RAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.98])
-        
+
         names.append("RElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.65])
-        
+
         names.append("RHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("RHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.49])
-        
+
         names.append("RHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("RShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.35])
-        
+
         names.append("RShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         motion = ALProxy("ALMotion")
         motion.angleInterpolation(names, keys, times, True)
-    
-    def pose7(self):
+
+    def pose7(self, t):
         names = list()
         times = list()
         keys = list()
-        
+
         names.append("HeadPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("HeadYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.65])
-        
+
         names.append("LAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("LAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.98])
-        
+
         names.append("LElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.65])
-        
+
         names.append("LHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("LHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("LHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("LShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.9])
-        
+
         names.append("LShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.35])
-        
+
         names.append("LWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.9876])
-        
+
         names.append("RAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.98])
-        
+
         names.append("RElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.65])
-        
+
         names.append("RHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("RHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.49])
-        
+
         names.append("RHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("RShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.9])
-        
+
         names.append("RShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         motion = ALProxy("ALMotion")
         motion.angleInterpolation(names, keys, times, True)
-    
-    def pose8(self):
+
+    def pose8(self, t):
         names = list()
         times = list()
         keys = list()
-        
+
         names.append("HeadPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("HeadYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("LAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.98])
-        
+
         names.append("LElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0])
-        
+
         names.append("LHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("LHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("LHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("LShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.5])
-        
+
         names.append("LShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.2])
-        
+
         names.append("LWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.9876])
-        
+
         names.append("RAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.98])
-        
+
         names.append("RElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("RHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.49])
-        
+
         names.append("RHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("RShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.5])
-        
+
         names.append("RShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.2])
-        
+
         names.append("RWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         motion = ALProxy("ALMotion")
         motion.angleInterpolation(names, keys, times, True)
-    
-    def pose9(self):
+
+    def pose9(self, t):
         names = list()
         times = list()
         keys = list()
-        
+
         names.append("HeadPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("HeadYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("LAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1])
-        
+
         names.append("LElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.5])
-        
+
         names.append("LHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("LHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.45])
-        
+
         names.append("LHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("LKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("LShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.5])
-        
+
         names.append("LShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([1.0])
-        
+
         names.append("LWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.9876])
-        
+
         names.append("RAnklePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.35])
-        
+
         names.append("RAnkleRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RElbowRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("RElbowYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.5])
-        
+
         names.append("RHand")
-        times.append([1.08])
+        times.append([t])
         keys.append([1])
-        
+
         names.append("RHipPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([-0.49])
-        
+
         names.append("RHipRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RHipYawPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         names.append("RKneePitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.7])
-        
+
         names.append("RShoulderPitch")
-        times.append([1.08])
+        times.append([t])
         keys.append([0.5])
-        
+
         names.append("RShoulderRoll")
-        times.append([1.08])
+        times.append([t])
         keys.append([-1.0])
-        
+
         names.append("RWristYaw")
-        times.append([1.08])
+        times.append([t])
         keys.append([0])
-        
+
         motion = ALProxy("ALMotion")
         motion.angleInterpolation(names, keys, times, True)
-    
+
     def onInput_onStart(self):
         # Choregraphe simplified export in Python.
         from naoqi import ALProxy
-        
-        
-        with open('/Users/manishshambu/Downloads/poses_play.txt', 'r') as f:
-            
+
+
+        with open('/Users/anuj/coursework_cuboulder/spring_2018/algo_hri/poses_random_data0.txt', 'r') as f:
+
             poseSequence = list(map(int, f.read().split('\n')[:-1]))
-        
-        for poseNumber in poseSequence:
-            self.logger.error(poseNumber)
+        tt=1.0#176.0/len(poseSequence)
+        for idx,poseNumber in enumerate(poseSequence):
+            self.logger.error(idx)
             if poseNumber == 0:
-                self.pose0()
+                self.pose0(tt)
             elif poseNumber == 1:
-                self.pose1()
+                self.pose1(tt)
             elif poseNumber == 2:
-                self.pose2()
+                self.pose2(tt)
             elif poseNumber == 3:
-                self.pose3()
+                self.pose3(tt)
             elif poseNumber == 4:
-                self.pose4()
+                self.pose4(tt)
             elif poseNumber == 5:
-                self.pose5()
+                self.pose5(tt)
             elif poseNumber == 6:
-                self.pose6()
+                self.pose6(tt)
             elif poseNumber == 7:
-                self.pose7()
+                self.pose7(tt)
             elif poseNumber == 8:
-                self.pose8()
+                self.pose8(tt)
             elif poseNumber == 9:
-                self.pose9()
-        
+                self.pose9(tt)
+
         # activate the output of the box
     pass
 
