@@ -1,0 +1,382 @@
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     author          = "Gerry Murray",
+%%%     version         = "1.2",
+%%%     date            = "2 April 2012",
+%%%     filename        = "acmsmall-sample-bibfile.bib",
+%%%     address         = "ACM, NY",
+%%%     email           = "murray at hq.acm.org",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "ACM Reference Format, bibliography, citation, references",
+%%%     supported       = "yes",
+%%%     docstring       = "This BibTeX database file contains 'bibdata' entries
+%%%                        that 'match' the examples provided in the Specifications Document
+%%%                        AND, also, 'legacy'-type bibs. It should assist authors in
+%%%                        choosing the 'correct' at-bibtype and necessary bib-fields
+%%%                        so as to obtain the appropriate ACM Reference Format output.
+%%%                        It also contains many 'Standard Abbreviations'. "
+%%%  }
+%%% ====================================================================
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+%Entries
+@book{mcneill:levine,
+  title={Hand and mind: What gestures reveal about thought},
+  author={McNeill, David},
+  year={1992},
+  publisher={University of Chicago press}
+}
+
+@article{terken:levine,
+  title={Fundamental frequency and perceived prominence of accented syllables},
+  author={Terken, Jacques},
+  journal={The Journal of the Acoustical Society of America},
+  volume={89},
+  number={4},
+  pages={1768--1776},
+  year={1991},
+  publisher={ASA}
+}
+
+@article{vosk,
+  title={Perception of emotions by accepted and rejected children},
+  author={Vosk, Barbara N and Forehand, Rex and Figueroa, Rolando},
+  journal={Journal of Behavioral Assessment},
+  volume={5},
+  number={2},
+  pages={151--160},
+  year={1983},
+  publisher={Springer}
+}
+
+@inproceedings{gestures:1,
+  title={Synchronized gesture and speech production for humanoid robots},
+  author={Ng-Thow-Hing, Victor and Luo, Pengcheng and Okita, Sandra},
+  booktitle={Intelligent Robots and Systems (IROS), 2010 IEEE/RSJ International Conference on},
+  pages={4617--4624},
+  year={2010},
+  organization={IEEE}
+}
+
+@inproceedings{levine:2,
+  title={Real-time prosody-driven synthesis of body language},
+  author={Levine, Sergey and Theobalt, Christian and Koltun, Vladlen},
+  booktitle={ACM Transactions on Graphics (TOG)},
+  volume={28},
+  number={5},
+  pages={172},
+  year={2009},
+  organization={ACM}
+}
+
+@article{deepmojipaper:3,
+  title={Using millions of emoji occurrences to learn any-domain representations for detecting sentiment, emotion and sarcasm},
+  author={Felbo, Bjarke and Mislove, Alan and S{\o}gaard, Anders and Rahwan, Iyad and Lehmann, Sune},
+  journal={arXiv preprint arXiv:1708.00524},
+  year={2017}
+}
+
+@inproceedings{cassell:4,
+  title={Beat: the behavior expression animation toolkit},
+  author={Cassell, Justine and Vilhj{\'a}lmsson, Hannes H{\"o}gni and Bickmore, Timothy},
+  booktitle={Proceedings of the 28th annual conference on Computer graphics and interactive techniques},
+  pages={477--486},
+  year={2001},
+  organization={ACM}
+}
+
+@inproceedings{anotherone:5,
+  title={Adapting human motion for the control of a humanoid robot},
+  author={Pollard, Nancy S and Hodgins, Jessica K and Riley, Marcia J and Atkeson, Christopher G},
+  booktitle={Robotics and Automation, 2002. Proceedings. ICRA'02. IEEE International Conference on},
+  volume={2},
+  pages={1390--1397},
+  year={2002},
+  organization={IEEE}
+}
+
+@article{aliss:6,
+  title={Solving the correspondence problem between dissimilarly embodied robotic arms using the ALICE imitation mechanism},
+  author={Alissandrakis, Aris and Nehaniv, Chrystopher L and Dautenhahn, Kerstin},
+  journal={Procs},
+  year={2003}
+}
+
+@inproceedings{admoni:7,
+  title={Data-driven model of nonverbal behavior for socially assistive human-robot interactions},
+  author={Admoni, Henny and Scassellati, Brian},
+  booktitle={Proceedings of the 16th international conference on multimodal interaction},
+  pages={196--199},
+  year={2014},
+  organization={ACM}
+}
+
+@inproceedings{breazeal:8,
+  title={Effects of nonverbal communication on efficiency and robustness in human-robot teamwork},
+  author={Breazeal, Cynthia and Kidd, Cory D and Thomaz, Andrea Lockerd and Hoffman, Guy and Berlin, Matt},
+  booktitle={Intelligent Robots and Systems, 2005.(IROS 2005). 2005 IEEE/RSJ International Conference on},
+  pages={708--713},
+  year={2005},
+  organization={IEEE}
+}
+
+@inproceedings{rbm:9,
+  title={How to train your avatar: A data driven approach to gesture generation},
+  author={Chiu, Chung-Cheng and Marsella, Stacy},
+  booktitle={International Workshop on Intelligent Virtual Agents},
+  pages={127--140},
+  year={2011},
+  organization={Springer}
+}
+
+@inproceedings{saleh:10,
+  title={A multimodal nonverbal human-robot communication system},
+  author={Saleh, Salah and Sahu, Manish and Zafar, Zuhair and Berns, Karsten and Rama, R and Skatulla, S and Sansour, C and Auccahuasi, W and Marcatoma, JB and Takayama, S and others},
+  booktitle={Proceedings of Sixth International Conference on Computational Bioengineering, ICCB},
+  year={2015}
+}
+
+@article{disvoice,
+  title={NeuroSpeech: An open-source software for Parkinson's speech analysis},
+  author={Orozco-Arroyave, Juan Rafael and V{\'a}squez-Correa, Juan Camilo and Vargas-Bonilla, Jes{\'u}s Francisco and Arora, Raman and Dehak, Najim and Nidadavolu, Phani Sankar and Christensen, Heidi and Rudzicz, Frank and Yancheva, Maria and Chinaei, H and others},
+  journal={Digital Signal Processing},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@article{sklearn,
+ title={Scikit-learn: Machine Learning in {P}ython},
+ author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+ journal={Journal of Machine Learning Research},
+ volume={12},
+ pages={2825--2830},
+ year={2011}
+}
+
+@online{simpleopenni,
+  author =    {Interaction Design Department Zurich / ZHDK},
+  title =  {simple-openni},
+  url =    {https://code.google.com/archive/p/simple-openni/}
+}
+
+@online{minimlib,
+  author =    {Damien Quartz},
+  title =  {Minim, Java audio library for Processing},
+  url =    {https://github.com/ddf/Minim}
+}
+
+@online{choregraphe,
+  author =    {Aldebaran},
+  title =  {Choregraphe desktop application},
+  url =    {http://doc.aldebaran.com/2-1/software/choregraphe/index.html}
+}
+
+@online{torchmoji,
+  author =    {Hugging Face},
+  title =  {torchMoji: A pyTorch implementation of the DeepMoji model},
+  url =    {https://github.com/huggingface/torchMoji}
+}
+
+@online{gcloud,
+  author =    {Google, Inc.},
+  title =  {Google Cloud Speech-to-Text API},
+  url =    {https://cloud.google.com/speech-to-text/docs/apis}
+}
