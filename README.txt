@@ -1,6 +1,13 @@
 Participant Evaluation Survey: https://goo.gl/U4bff8 (requires CUBoulder sign-in)
 
+All code for data processing and gesture synthesis is provided in the gesture_modeling.ipynb notebook. bodylang_utils.py contains useful functions used in gesture_modeling.ipynb.
+
+data_capture.pde can be loaded into the desktop Processing application and run by pressing the Play button.
+
+naoQiAudio.py and posesNaoQi.py are responsible for playing the selected audio and gesture files, respectively, in Choregraphe. One has to manually define the 10 base poses on a new machine. There doesn't seem to be a way to store these into a JSON file.
+
 ---------
+IGNORE:
 
 Prosody Extraction Module - Given an audio input, it gives the prosody features for each frame.
 
