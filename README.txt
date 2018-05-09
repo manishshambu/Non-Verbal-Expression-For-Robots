@@ -7,6 +7,10 @@ data_capture.pde can be loaded into the desktop Processing application and run b
 naoQiAudio.py and posesNaoQi.py are responsible for playing the selected audio and gesture files, respectively, in Choregraphe. One has to manually define the 10 base poses on a new machine. There doesn't seem to be a way to store these into a JSON file.
 
 ---------
+
+Generated videos of the NAO robot: https://drive.google.com/open?id=1g9VPtR3mWc-io_iBdaHu4aOAi1H63lM8 (requires CUBoulder sign-in)
+
+---------
 IGNORE:
 
 Prosody Extraction Module - Given an audio input, it gives the prosody features for each frame.
